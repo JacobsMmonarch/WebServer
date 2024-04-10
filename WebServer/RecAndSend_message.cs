@@ -8,6 +8,18 @@ class Server
 {
     static async Task Main(string[] args)
     {
+        //string directoryPath = "C:\\Users\\Practika\\source\\repos\\WebServer\\file_sys";
+        //Directory.CreateDirectory(directoryPath);
+
+        //// Создание файла
+        //string filePath = "C:\\Users\\Practika\\source\\repos\\WebServer\\file_sys\\file.txt";
+        //File.WriteAllText(filePath, "This is a new file content.");
+
+        //Console.WriteLine("File system created successfully.");
+
+
+
+
         HttpListener listener = new HttpListener();
         listener.Prefixes.Add("https://localhost:7191");
 
