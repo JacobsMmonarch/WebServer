@@ -5,10 +5,13 @@
 
 <h1>Мониторинг</h1>
 
-<form method="post" asp-controller="Monitoring" asp-action="Check">
-    <div class="form-group">
-        <label for="directoryPath">Путь к директории:</label>
-        <input type="text" class="form-control" id="directoryPath" name="directoryPath" placeholder="Введите путь к директории" required>
-    </div>
-    <input type="submit" value="Начать мониторинг"/>
-</form>
+<div>
+    <h2>Введите путь к папке с файлами:</h2>
+    <form method="post">
+        <div class="form-group">
+            <label for="directoryPath">Путь к папке:</label>
+            <input type="text" class="form-control" id="directoryPath" name="directoryPath" placeholder="Введите путь к папке" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+</div>

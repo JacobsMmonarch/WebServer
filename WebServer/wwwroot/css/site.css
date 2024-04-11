@@ -1,58 +1,73 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Добавляем для корректного учета границ и отступов в расчетах ширины элементов */
 }
 
 body {
-    background: white;
+    background: #f8f9fa; /* Изменяем фон на более светлый */
     font-family: Radiotechnika;
+    color: #212529; /* Цвет текста для лучшей читаемости */
 }
 
 header {
     width: 100%;
-    padding: 40px 10%;
-    color: #beff00;
-    display: flexlex;
+    padding: 20px 5%; /* Уменьшаем отступы для более компактного вида */
+    color: #fff;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
+    background: linear-gradient(to right, #00CDAC, #02AAB0); /* Градиентный фон для более интересного вида */
 }
 
     header .logo {
-        font-size: 45px;
+        font-size: 40px; /* Немного уменьшаем размер логотипа */
+        font-weight: bold; /* Добавляем жирность для большей выразительности */
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Тень для выделения */
     }
 
     header nav a {
         color: #fff;
         text-decoration: none;
+        margin-left: 20px; /* Добавляем отступы между ссылками для лучшего визуального разделения */
+        transition: color 0.3s; /* Плавное изменение цвета при наведении */
     }
 
         header nav a:hover {
-            text-decoration: underline
+            color: #ffc107; /* Цвет ссылки при наведении */
         }
 
 main {
     width: 80%;
     padding: 15px 10%;
-    margin: 50px 0;
+    margin: 50px auto; /* Центрируем основное содержимое */
+    background-color: #fff; /* Добавляем фон для контента */
+    border-radius: 15px; /* Скругляем углы */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Добавляем тень для выделения */
 }
 
 div.form-group {
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px; /* Уменьшаем отступы для формы */
 }
 
 input {
     padding: 10px 20px;
     border-radius: 15px;
-    border-color: #beff00;
+    border: 2px solid #d5d5d5; /* Изменяем стиль границы */
+    transition: border-color 0.5s; /* Плавное изменение цвета границы при фокусе */
 }
+
+    input:focus {
+        outline: none; /* Убираем обводку при фокусе */
+        border-color: #ffc107; /* Цвет границы при фокусе */
+    }
 
 footer {
     margin-top: 50px;
     text-align: center;
     width: 100%;
-    padding: 40px 0;
+    padding: 20px 0; /* Уменьшаем отступы для футера */
     color: #fff;
-    background: #333;
-    font-size: 10px;
+    background: linear-gradient(to right, #02AAB0, #00CDAC); /* Градиентный фон для футера */
+    font-size: 14px; /* Увеличиваем размер текста */
 }
